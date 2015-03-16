@@ -1,0 +1,10 @@
+# Site settings
+title: Ciao App 
+email: simon@ciaotelecom.com
+description: "Ciao App Description"
+baseurl: ""
+url: "https://ciaoapp.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
