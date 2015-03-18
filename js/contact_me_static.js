@@ -22,24 +22,31 @@ $('#name').focus(function() {
     $('#success').html('');
 });
 
+//Reveal Sign Up form again on clicking this button
+$("#success .btn").click(function(){
+    $("#success").fadeOut("slow");
+    $("#contactForm .row").fadeIn("slow");
+});
+
 //prevent submit button being clickable as long as error messages 
 
 $("#contactForm").on("submit",function(e){
     e.preventDefault();
-
+    /*if($("#contactForm ul['alert']").length != 0)
+        return false;*/
+    var submitButton = $("#contactForm button[type='submit']");
     $.post(this.action, $(this).serialize(), function(){
-        $("#contactForm button").text("Sending...");
+         //success message
+        submitButton.text("Success!");
+        $("#contactForm .row").fadeOut("slow");
+        $("#success").fadeIn("slow");
     }, "json")
     .done(function() {
-     //success message
-    $("#contactForm button").text("Success!");
-    $("#contactForm .row").fadeToggle("slow");
-    $("#success .label-success").fadeIn();
-    $("#success .btn").fadeIn();
+        //on finish
     })
     .fail(function() {
     //error message
-    $("#contactForm button").text("Resubmit");
+    submitButton.text("Resubmit");
     });
     
 

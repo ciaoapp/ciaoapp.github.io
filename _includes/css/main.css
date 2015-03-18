@@ -123,6 +123,14 @@ header .intro-text .skills {
     }
 }
 
+.navbar-header > .custom-brand {
+    padding: 0 0;
+}
+
+.custom-brand > .brand-image{
+    margin-top: -5px;
+}
+
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
@@ -325,10 +333,21 @@ form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
 }
 
-form .hidden {
+form .not-visible {
     display: none;
 }
 
+form .center {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+form #center{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 footer {
     color: #fff;
