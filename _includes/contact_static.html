@@ -19,26 +19,40 @@
 					</div>
 					<div class="row control-group">
 						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label>Country</label>
+							<input type="text" name="country" class="form-control" placeholder="Country" id="country" required data-validation-required-message="Please enter your country.">
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-xs-6 floating-label-form-group controls">
 							<label>Email Address</label>
 							<input type="email" name="_replyto" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
 							<p class="help-block text-danger"></p>
 						</div>
 
-						<div class="form-group col-xs-12 floating-label-form-group controls">
+						<div class="form-group col-xs-6 floating-label-form-group controls">
 							<label>Phone Number</label>
-							<input type="tel" name="phone" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+							<input type="tel" name="phone" class="form-control" placeholder="Phone Number" id="phone" 
+							required data-validation-required-message="Please enter your phone number." 
+							data-validation-pattern-message="Please enter a valid phone number" 
+							pattern="\b\d?[-.]?\d{3}[-.]?\d{3}[-.]?\d{4}\b">
 							<p class="help-block text-danger"></p>
 						</div>
 					</div>
 					<div>
 						<input type="hidden"  name="_subject" value="New submission!">
 						<input type="text" name="_gotcha" style="display:none" />
-						<input type="hidden" name="_next" value="" />
+						<input type="hidden" name="_next" value="#" />
 					</div>
 					<div class="row control-group">
 						<div class="form-group col-xs-12 floating-label-form-group controls">
 							<label>Message</label>
-							<textarea rows="5" name="message" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+							<textarea rows="5" name="message" class="form-control" placeholder="Message" id="message"
+							data-validation-required-message="Please enter a message."
+							data-validation-maxlength-message="Please limit message up to 1000 characters"
+							maxlength=100
+							></textarea>
 							<p class="help-block text-danger"></p>
 						</div>
 					</div>

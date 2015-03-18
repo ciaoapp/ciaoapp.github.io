@@ -4,6 +4,26 @@ $(function() {
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
+            $("#contactForm button[type='submit']").text("Resubmit");
+        },
+        submitSuccess: function($form, event) {
+            $form.preventDefault();
+            event.preventDefault();
+            var submitButton = $("#contactForm button[type='submit']");
+            $.post(this.action, $(this).serialize(), function(){
+                 //success message
+                $("#contactForm .row").fadeOut("slow");
+                $("#success").fadeIn("slow");
+            }, "json")
+            .done(function() {
+                //on finish
+            })
+            .fail(function() {
+            //error message
+            submitButton.text("Resubmit");
+            });
+
+            return false;
         },
 
         filter: function() {
@@ -25,19 +45,19 @@ $('#name').focus(function() {
 //Reveal Sign Up form again on clicking this button
 $("#success .btn").click(function(){
     $("#success").fadeOut("slow");
+    $("#contactForm button[type='submit']").text("Submit");
     $("#contactForm .row").fadeIn("slow");
 });
 
 //prevent submit button being clickable as long as error messages 
 
-$("#contactForm").on("submit",function(e){
+/*$("#contactForm").on("submit",function(e){
     e.preventDefault();
     /*if($("#contactForm ul['alert']").length != 0)
-        return false;*/
+        return false;
     var submitButton = $("#contactForm button[type='submit']");
     $.post(this.action, $(this).serialize(), function(){
          //success message
-        submitButton.text("Success!");
         $("#contactForm .row").fadeOut("slow");
         $("#success").fadeIn("slow");
     }, "json")
@@ -51,6 +71,8 @@ $("#contactForm").on("submit",function(e){
     
 
     return false;
+
+    });*/
    /* $.ajax({
       url: form-action,
       method: 'POST',
@@ -70,5 +92,3 @@ $("#contactForm").on("submit",function(e){
 
     return false;  
     });*/
-
-});
