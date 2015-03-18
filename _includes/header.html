@@ -1,15 +1,61 @@
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/logo.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">{{ site.title }}</span>
-                        <hr class="star-light">
-                        <span class="skills">Ad Based - Low Cost - Unlimited International Calls and SMS</span>
-                    </div>
-                </div>
+                <div id="myCarousel" class="carousel slide" data-interval=false>
+                           <!-- Carousel indicators -->
+                           <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                           </ol>   
+                           <!-- Carousel items -->
+                           <div class="carousel-inner">
+                              <div class="item active">
+                                    <div class="col-lg-12 foreground-content">
+                                        <img class="img-responsive" src="img/logo.png" alt="">
+                                        <div class="intro-text">
+                                            <span class="name">{{ site.title }}</span>
+                                            <hr class="star-light">
+                                            <span class="skills">Ad Based - Low Cost - Unlimited International Calls and SMS</span>
+                                        </div>
+                                    </div>
+                                    <img class="background-image" src="{{site.carousel.first}}" alt="First slide">
+                              </div>
+                              <div class="item">
+                                <div class="col-lg-12 foreground-content">
+                                    <div class="col-sm-4 portfolio-item">
+                                        <img class="img-responsive" src="img/portfolio/game.png" alt="">
+                                    </div>
+                                    <div class="intro-text">
+                                        <span class="name">{{ site.title }}</span>
+                                        <hr class="star-light">
+                                        <span class="skills">Ad Based - Low Cost - Unlimited International Calls and SMS</span>
+                                    </div>
+                                </div>
+                                 <img class="background-image" src="img/portfolio/bg2.jpg" alt="Second slide">
+                              </div>
+                              <div class="item">
+                                <div class="col-lg-12 foreground-content">
+                                    <div class="col-sm-4 portfolio-item">
+                                        <img class="img-responsive" src="img/portfolio/cake.png" alt="">
+                                    </div>
+                                    <div class="intro-text">
+                                        <span class="name">{{ site.title }}</span>
+                                        <hr class="star-light">
+                                        <span class="skills">Ad Based - Low Cost - Unlimited International Calls and SMS</span>
+                                    </div>
+                                </div>
+                                 <img class="background-image" src="img/portfolio/bg3.jpg" alt="Third slide">
+                              </div>
+                           </div>
+                           <!-- Carousel nav -->
+                           <a class="carousel-control left" href="#myCarousel" 
+                              data-slide="prev">&lsaquo;</a>
+                           <a class="carousel-control right" href="#myCarousel" 
+                              data-slide="next">&rsaquo;</a>
+                        </div> 
+    
             </div>
         </div>
     </header>

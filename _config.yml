@@ -18,6 +18,12 @@ home-section-title: Ciao
 work-section-title: How It Works 
 contact-section-title: Sign Up (beta)
 
+#carousel background images
+carousel:
+  first: img/portfolio/bg1.jpg
+  second: img/portfolio/bg2.jpg
+  third: img/portfolio/bg3.jpg
+
 # Footer settings
 footer:
   copyright: Ciao Telecom Inc. 

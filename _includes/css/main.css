@@ -79,6 +79,25 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+#myCarousel{
+  margin-top:100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.foreground-content{
+    z-index:5;
+    position:relative;
+    top:60px;
+    display:block;
+    min-height:500px;
+}
+
+.background-image{
+    z-index:0;
+    position:absolute;
+    top:0;
+    display:block;
+}
 header {
     text-align: center;
     color: #fff;
