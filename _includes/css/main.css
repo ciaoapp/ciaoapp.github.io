@@ -89,7 +89,7 @@ hr.star-primary:after {
     position:relative;
     top:60px;
     display:block;
-    min-height:500px;
+    min-height:560px;
 }
 
 .background-image{
@@ -152,7 +152,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 20px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -178,6 +178,7 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    overflow: hidden;
 }
 
 .navbar a:focus {
@@ -366,6 +367,10 @@ form #center{
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+.container > #contact-background{
+    background-image: url("{{ site.background.fourth }}");
 }
 
 footer {

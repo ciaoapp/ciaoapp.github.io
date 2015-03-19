@@ -14,22 +14,21 @@ color:
   secondary-dark: 534344 #A2122F
 
 #scrollable sections 
-home-section-title: Ciao 
-work-section-title: How It Works 
-contact-section-title: Sign Up (beta)
+home-section-title: Ciao
+work-section-title: How It Works
+contact-section-title: Join Waitlist
 
 #carousel background images
-carousel:
+background:
   first: img/portfolio/bg1.jpg
   second: img/portfolio/bg2.jpg
   third: img/portfolio/bg3.jpg
-
+  fourth: img/portfolio/bg.jpg
 # Footer settings
 footer:
-  copyright: Ciao Telecom Inc. 
+  copyright: Ciao Inc. 
   location: Location
   social: Around the Web
-  credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
