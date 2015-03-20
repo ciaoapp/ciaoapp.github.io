@@ -18,9 +18,10 @@ $(function() {
     var current_section = -1;
     var node;
     $(document).keydown(function(e){
-        e.preventDefault();
+        
         switch(e.which){
             case 40: //down arrow key
+                e.preventDefault();
                 node = sections[++current_section];
                 if(node){
                     $('html, body').stop().animate({
@@ -30,6 +31,7 @@ $(function() {
                     current_section = sections.length-1;
                 break;
             case 38: //up arrow key
+                e.preventDefault();
                 node = sections[--current_section];
                 if(node){
                     $('html, body').stop().animate({
