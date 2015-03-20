@@ -11,19 +11,18 @@
 			<div class="col-lg-8 col-lg-offset-2">
 				<form  action="//formspree.io/ {{ site.email }}" method="POST" name="sentMessage" id="contactForm" novalidate>
 					<div class="row control-group">
-						<div class="form-group col-xs-12 floating-label-form-group controls">
+						<div class="form-group col-xs-6 floating-label-form-group controls">
 							<label>Name</label>
 							<input type="text" name="name" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
 							<p class="help-block text-danger"></p>
 						</div>
-					</div>
-					<div class="row control-group">
-						<div class="form-group col-xs-12 floating-label-form-group controls">
+						<div class="form-group col-xs-6 floating-label-form-group controls">
 							<label>Country</label>
 							<input type="text" name="country" class="form-control" placeholder="Country" id="country" required data-validation-required-message="Please enter your country.">
 							<p class="help-block text-danger"></p>
 						</div>
 					</div>
+						
 					<div class="row control-group">
 						<div class="form-group col-xs-6 floating-label-form-group controls">
 							<label>Email Address</label>
@@ -48,7 +47,7 @@
 					<div class="row control-group">
 						<div class="form-group col-xs-12 floating-label-form-group controls">
 							<label>Message</label>
-							<textarea rows="5" name="message" class="form-control" placeholder="Message" id="message"
+							<textarea rows="3" name="message" class="form-control" placeholder="Message" id="message"
 							data-validation-required-message="Please enter a message."
 							data-validation-maxlength-message="Please limit message up to 1000 characters"
 							maxlength=100
