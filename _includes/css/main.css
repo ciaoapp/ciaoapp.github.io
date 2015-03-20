@@ -121,7 +121,7 @@ header img {
     margin: 0 auto 20px;
 }
 
-header .intro-text .name {
+header .intro-text .subname,header .intro-text .name {
     display: block;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -142,6 +142,10 @@ header .intro-text .skills {
 
     header .intro-text .name {
         font-size: 4.75em;
+    }
+
+    header .intro-text .subname{
+        font-size: 3.25em;
     }
 
     header .intro-text .skills {
