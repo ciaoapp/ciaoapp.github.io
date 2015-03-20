@@ -85,7 +85,7 @@ hr.star-primary:after {
   margin-left: auto;
 }
 .foreground-content{
-    z-index:5;
+    z-index:2;
     position:relative;
     top:60px;
     display:block;
@@ -98,6 +98,13 @@ hr.star-primary:after {
     top:0;
     display:block;
 }
+
+.glphyicon{
+  background-image:none !important;
+  margin-top:20%;
+  z-index: 3;
+}
+
 header {
     text-align: center;
     color: #fff;
@@ -309,13 +316,19 @@ section.success {
     z-index: 1;
     position: relative;
     padding-right: 0;
-    padding-left: 0;
+    padding-left: 5px;
     border: 0;
     border-radius: 0;
     font-size: 1.5em;
-    background: 0 0;
-    box-shadow: none!important;
+    background: 0 0;;
     resize: none;
+}
+
+.floating-label-form-group input:focus,
+.floating-label-form-group textarea:focus {
+   border-color: #66AFE9;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+   outline: 0 none;
 }
 
 .floating-label-form-group label {
