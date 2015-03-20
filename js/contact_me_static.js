@@ -42,10 +42,6 @@ $('#name').focus(function() {
     $('#success').html('');
 });
 
-/*$("#contactForm .form-control").click(function(){
-    $(this).addClass("focus");
-})*/
-
 //Reveal Sign Up form again on clicking this button
 $("#success .btn").click(function(){
     $("#success").fadeOut("slow");

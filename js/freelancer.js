@@ -13,6 +13,34 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    var sections = $('.navbar-nav li a');
+    var current_section = -1;
+    var node;
+    $(document).keydown(function(e){
+        e.preventDefault();
+        switch(e.which){
+            case 40: //down arrow key
+                node = sections[++current_section];
+                if(node){
+                    $('html, body').stop().animate({
+                        scrollTop: $(node.getAttribute('href')).offset().top
+                    }, 1500, 'easeInOutExpo');
+                } else
+                    current_section = sections.length-1;
+                break;
+            case 38: //up arrow key
+                node = sections[--current_section];
+                if(node){
+                    $('html, body').stop().animate({
+                        scrollTop: $(node.getAttribute('href')).offset().top
+                    }, 1500, 'easeInOutExpo');
+                } else
+                    current_section = 0;
+                break;
+        }
+
+    });
 });
 
 // Floating label headings for the contact form
