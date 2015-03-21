@@ -11,10 +11,10 @@ contact: static
 color:
   primary: AA9596 #80B3FF
   secondary:  D60207 #FD6E8A
-  secondary-dark: 534344 #A2122F
+  secondary-dark: FF8C1F #A2122F
 
 #scrollable sections 
-home-section-title: Ciao
+home-section-title: Learn More
 work-section-title: How It Works
 contact-section-title: Join Waitlist
 

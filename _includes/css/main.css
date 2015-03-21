@@ -35,7 +35,6 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -48,7 +47,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    /*content: "\f005";*/
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -121,7 +120,7 @@ header img {
     margin: 0 auto 20px;
 }
 
-header .intro-text .subname,header .intro-text .name {
+header .intro-text .subname, .subname,header .intro-text .name {
     display: block;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -129,9 +128,14 @@ header .intro-text .subname,header .intro-text .name {
     font-weight: 700;
 }
 
-header .intro-text .skills {
+header .intro-text .skills, .skills {
     font-size: 1.25em;
     font-weight: 300;
+}
+
+header a {
+    color: #fff !important;
+    text-decoration:none !important;
 }
 
 @media(min-width:768px) {
@@ -144,7 +148,7 @@ header .intro-text .skills {
         font-size: 4.75em;
     }
 
-    header .intro-text .subname{
+    header .intro-text .subname, .subname{
         font-size: 3.25em;
     }
 
@@ -288,6 +292,10 @@ section.success {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
+}
+
+.btn-padding{
+    margin-top: 16px;
 }
 
 .btn-outline {
