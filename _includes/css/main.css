@@ -78,7 +78,7 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
-#myCarousel{
+#carousel{
   margin-top:100px;
   margin-right: auto;
   margin-left: auto;
@@ -107,7 +107,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #{{ site.color.primary }};
+    background: #{{ site.color.secondary-dark}};
 }
 
 header .container {
@@ -129,6 +129,7 @@ header .intro-text .subname, .subname,header .intro-text .name {
 }
 
 header .intro-text .skills, .skills {
+    text-align:justify;
     font-size: 1.25em;
     font-weight: 300;
 }

@@ -6,6 +6,10 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
+    var sections = $('.navbar-nav li a');
+    var current_section = -1;
+    var node;
+
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -14,9 +18,7 @@ $(function() {
         event.preventDefault();
     });
 
-    var sections = $('.navbar-nav li a');
-    var current_section = -1;
-    var node;
+    
     $(document).keydown(function(e){
         
         switch(e.which){
@@ -67,4 +69,4 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 //carousel swipe detection npm package
-$("#myCarousel").carousel();
+$("#carousel").carousel();

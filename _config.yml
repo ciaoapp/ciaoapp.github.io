@@ -14,9 +14,16 @@ color:
   secondary-dark: 534344 #A2122F
 
 #scrollable sections 
-home-section-title: Learn More
+learn-section-title: Learn More
 work-section-title: How It Works
 contact-section-title: Join Waitlist
+
+#hrefs
+hrefs:
+  first: introduction
+  second: learn-more
+  third: how-it-works  
+  last: join-waitlist
 
 #carousel background images
 background:
