@@ -9,9 +9,9 @@ contact: static
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: AA9596 #80B3FF
+  primary: 5F87D7 #80B3FF
   secondary:  D60207 #FD6E8A
-  secondary-dark: FF8C1F #A2122F
+  secondary-dark: 534344 #A2122F
 
 #scrollable sections 
 home-section-title: Learn More
