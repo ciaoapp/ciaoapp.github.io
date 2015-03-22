@@ -1,5 +1,5 @@
 # Site settings
-title: Ciao App
+title: Ciao
 email: simon@ciaotelecom.com
 url: https://ciaoapp.github.io
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
@@ -16,7 +16,7 @@ color:
 #scrollable sections 
 learn-section-title: Learn More
 work-section-title: How It Works
-contact-section-title: Join Waitlist
+contact-section-title: Join The Waitlist
 
 #hrefs
 hrefs:

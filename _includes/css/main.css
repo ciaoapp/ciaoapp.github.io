@@ -130,9 +130,16 @@ header .intro-text .subname, .subname,header .intro-text .name {
 
 header .intro-text .skills, .skills {
     text-align:justify;
-    font-size: 1.25em;
-    font-weight: 300;
+    font-size: 1.10em;
+    font-weight: 280;
 }
+
+header .intro-text .center-skills, .center-skills {
+    text-align:center;
+    font-size: 1.10em;
+    font-weight: 280;
+}
+
 
 header a {
     color: #fff !important;
@@ -154,7 +161,7 @@ header a {
     }
 
     header .intro-text .skills {
-        font-size: 1.75em;
+        font-size: 1.10em;
     }
 }
 
