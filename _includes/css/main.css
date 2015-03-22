@@ -101,6 +101,11 @@ header .foreground-content{
     display:block;
 }
 
+#carousel #first-item{
+    background-repeat:no-repeat;
+    background-image:url('/{{ site.background.first }}');
+}
+
 .glphyicon{
   background-image:none !important;
   margin-top:20%;
