@@ -83,10 +83,13 @@ hr.star-primary:after {
   margin-right: auto;
   margin-left: auto;
 }
+
+header .foreground-content{
+    top:60px;
+}
 .foreground-content{
     z-index:2;
     position:relative;
-    top:60px;
     display:block;
     min-height:560px;
 }
@@ -324,11 +327,21 @@ section.success {
     background: #fff;
 }
 
+section#join-waitlist{
+    background-repeat:no-repeat;
+    background-image: url('/{{site.background.fourth}}');
+    background-size: cover;
+    overflow:hidden;
+}
+
+#contactContainer .header {
+    color: #fff;
+}
+
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
-    padding-bottom: .5em;
-    border-bottom: 1px solid #eee;
+    padding-bottom: 0em;
 }
 
 .floating-label-form-group input,
@@ -342,6 +355,7 @@ section.success {
     font-size: 1.5em;
     background: 0 0;;
     resize: none;
+    background-color:white;
 }
 
 .floating-label-form-group input:focus,
@@ -383,7 +397,7 @@ section.success {
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee;
+   /* border-top: 1px solid #eee;*/
 }
 
 form .not-visible {
@@ -400,10 +414,6 @@ form #center{
     display: block;
     margin-right: auto;
     margin-left: auto;
-}
-
-.container > #contact-background{
-    background-image: url("{{ site.background.fourth }}");
 }
 
 footer {
