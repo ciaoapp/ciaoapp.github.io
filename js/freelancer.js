@@ -42,10 +42,12 @@ $(function() {
             case 38: //up arrow key
                 e.preventDefault();
                 node = sections[--current_section];
-                if(node){
+                if(node && current_section >= 0){
+                    var href = node.getAttribute('href');
                     $('html, body').stop().animate({
-                        scrollTop: $(node.getAttribute('href')).offset().top
+                        scrollTop: $(href).offset().top
                     }, 1500, 'easeInOutExpo');
+            
                 } else
                     current_section = 0;
                 break;
