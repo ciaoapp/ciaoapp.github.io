@@ -11,4 +11,5 @@ privacy-titles:
 
 ---
 
-{% include privacy.markdown %}
+{% capture markdown_include %}{% include privacy.markdown %}{% endcapture %}
+{{ markdown_include | markdownify }}
