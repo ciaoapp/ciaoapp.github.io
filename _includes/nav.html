@@ -17,11 +17,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <% if page.url == {{site.privacy-url}}%>
-                        <% include privacy-navlinks %>
-                    <% else %>
-                        <% include main-navlinks %>
-                    <% endif %>
+                    {% if page.url == site.privacy-url %}
+                        {% include privacy-navlinks.html %}
+                    {% else %}
+                        {% include main-navlinks.html %}
+                    {% endif %}
 
                 </ul>
             </div>
