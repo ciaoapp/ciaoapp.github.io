@@ -84,6 +84,10 @@ hr.star-primary:after {
   margin-left: auto;
 }
 
+header .privacy-content{
+    text-align:left;
+}
+
 header .foreground-content{
     top:60px;
 }
@@ -441,6 +445,11 @@ footer .footer-col {
 footer .footer-below {
     padding: 25px 0;
     background-color: #{{ site.color.secondary-dark }};
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn-social {

@@ -1,8 +1,8 @@
 # Site settings
 title: Ciao
 email: support@ciaotelecom.com
-url: https://ciaoapp.github.io
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+url: joinciao.com
+description: "Join Ciao Now! Sign up for our waiting list!"
 favicon: img/favicon.ico
 # Contact form: comment the line below if you want to stick with the default PHP contact form
 contact: static
@@ -18,6 +18,8 @@ learn-section-title: Learn More
 work-section-title: How It Works
 contact-section-title: Join The Waitlist
 
+privacy-url: /privacy/
+
 #hrefs
 hrefs:
   first: page-top
@@ -31,6 +33,7 @@ background:
   second: img/portfolio/bg2.jpg
   third: img/portfolio/bg3.jpg
   fourth: img/portfolio/bg.jpg
+
 # Footer settings
 footer:
   copyright: Ciao Inc. 
@@ -62,3 +65,10 @@ credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+defaults: 
+  - scope:
+      path: "privacy"
+    values:
+      layout: "default"
+      type: "pages"

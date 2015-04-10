@@ -10,25 +10,19 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand custom-brand" href="#page-top">
-                    <img src="img/favicons/apple-touch-icon-72x72.png" class="custom-brand brand-image" alt="">
+                    <img src="/img/favicons/apple-touch-icon-72x72.png" class="custom-brand brand-image" alt="">
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#{{site.hrefs.first}}"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#{{site.hrefs.second}}">{{ site.learn-section-title }}</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#{{site.hrefs.third}}">{{ site.work-section-title }}</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#{{site.hrefs.last}}">{{ site.contact-section-title }}</a>
-                    </li>
+                    <% if page.url == {{site.privacy-url}}%>
+                        <% include privacy-navlinks %>
+                    <% else %>
+                        <% include main-navlinks %>
+                    <% endif %>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
