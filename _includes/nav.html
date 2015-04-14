@@ -3,20 +3,23 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#link-navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand custom-brand" href="#page-top">
-                    <img src="/img/favicons/apple-touch-icon-72x72.png" class="custom-brand brand-image" alt="">
-                </a>
+                 <a class="logo" href="#page-top">
+                        <img src="/img/favicons/apple-touch-icon-72x72.png" class="img-centered" alt="">
+                        <div class="logo-shadow">
+                        </div>
+                    </a>
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="collapse navbar-collapse" id="link-navbar">
+                <ul class="nav navbar-nav">
                     {% if page.url == site.privacy-url %}
                         {% include privacy-navlinks.html %}
                     {% else %}

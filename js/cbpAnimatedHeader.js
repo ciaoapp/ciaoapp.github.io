@@ -11,6 +11,7 @@
 var cbpAnimatedHeader = (function() {
 
 	var docElem = document.documentElement,
+		logoCircle = document.querySelector('.logo'),
 		header = document.querySelector( '.navbar-fixed-top' ),
 		didScroll = false,
 		changeHeaderOn = 300;
@@ -27,9 +28,11 @@ var cbpAnimatedHeader = (function() {
 	function scrollPage() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
+			classie.add(logoCircle, 'logo-shrink');
 			classie.add( header, 'navbar-shrink' );
 		}
 		else {
+			classie.remove(logoCircle, 'logo-shrink');
 			classie.remove( header, 'navbar-shrink' );
 		}
 		didScroll = false;

@@ -9,6 +9,7 @@ $(function() {
     var sections = $('.navbar-nav li a');
     var current_section = -1;
     var node;
+    var additionalOffset = 40;
 
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
@@ -20,7 +21,7 @@ $(function() {
         });
             
         $('html, body').stop().animate({
-            scrollTop: $(href).offset().top
+            scrollTop: $(href).offset().top - additionalOffset
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
@@ -34,7 +35,7 @@ $(function() {
                 node = sections[++current_section];
                 if(node){
                     $('html, body').stop().animate({
-                        scrollTop: $(node.getAttribute('href')).offset().top
+                        scrollTop: $(node.getAttribute('href')).offset().top - additionalOffset
                     }, 1500, 'easeInOutExpo');
                 } else
                     current_section = sections.length-1;
@@ -45,7 +46,7 @@ $(function() {
                 if(node && current_section >= 0){
                     var href = node.getAttribute('href');
                     $('html, body').stop().animate({
-                        scrollTop: $(href).offset().top
+                        scrollTop: $(href).offset().top - additionalOffset
                     }, 1500, 'easeInOutExpo');
             
                 } else
@@ -68,9 +69,9 @@ $(function() {
 });
 
 // Highlight the top nav as scrolling occurs
-$('body').scrollspy({
+/*$('body').scrollspy({
     target: '.navbar-fixed-top'
-})
+})*/
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
