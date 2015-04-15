@@ -83,7 +83,15 @@ hr.star-primary:after {
   margin-left: auto;
 }
 
+.col-centered{
+    float: none;
+    display: block;
+    margin: 0px auto;
+}
+
 header .privacy-content{
+    color: #000;
+    float: none;
     text-align:left;
 }
 
@@ -118,7 +126,7 @@ header .foreground-content{
 header {
     text-align: center;
     color: #fff;
-    background: #{{ site.color.secondary-dark}};
+    background: #{{ site.color.alternate}};
 }
 
 header .container {
@@ -407,6 +415,8 @@ section#join-waitlist{
     position: relative;
     padding-right: 0;
     padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: 0;
     border-radius: 0;
     font-size: 1.5em;
@@ -447,10 +457,11 @@ section#join-waitlist{
 .floating-label-form-group-with-value label {
     top: 0;
     opacity: 1;
+    color: #fff;
 }
 
 .floating-label-form-group-with-focus label {
-    color: #{{ site.color.primary }};
+    color: #fff;
 }
 
 form .row:first-child .floating-label-form-group {
