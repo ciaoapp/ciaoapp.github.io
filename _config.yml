@@ -12,6 +12,7 @@ color:
   primary: 5F87D7 #80B3FF
   secondary:  D60207 #FD6E8A
   secondary-dark: 534344 #A2122F
+  link-color: BDAFAF
 
 #scrollable sections 
 learn-section-title: Learn More
