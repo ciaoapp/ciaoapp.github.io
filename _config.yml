@@ -1,6 +1,6 @@
 # Site settings
 title: Ciao
-email: support@ciaotelecom.com
+email: victor@ciaoapp.us
 url: joinciao.com
 description: "Join Ciao Now! Sign up for our waiting list!"
 favicon: img/favicon.ico
@@ -60,9 +60,6 @@ address:
   - line: 8390 Lyndon B Johnson Fwy
   - line: Dallas, TX 75243
 
-
-# Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Handle Reading Markdown
 markdown_ext: "markdown,mkdown,mkdn,md"
