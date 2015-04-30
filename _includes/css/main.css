@@ -193,9 +193,8 @@ header a {
     margin-top: -5px;
 }*/
 
-@media(min-width:768px) {
+@media(min-width: 1000px){
     #link-navbar{
-        float:right;
         margin-right:-60px;
     }
 
@@ -239,7 +238,12 @@ header a {
         transition: .3s;
 
     }
+}
 
+@media(min-width:768px) {
+     #link-navbar{
+        float:right;
+    }
     .navbar-fixed-top {
 
         padding: 20px 0;
