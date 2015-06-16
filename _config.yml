@@ -9,7 +9,7 @@ contact: static
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 5F87D7 #80B3FF
+  primary: ffffff #80B3FF
   secondary:  0084ff #D60207 #FD6E8A
   secondary-dark: 534344 #A2122F
   link-color: BDAFAF
@@ -18,6 +18,7 @@ color:
 #scrollable sections 
 learn-section-title: Learn More
 work-section-title: How It Works
+join-section-title: Join Us
 contact-section-title: Contact Us
 
 privacy-url: /privacy/
@@ -27,9 +28,11 @@ advertisers-url: /contact-us/advertisers/
 #hrefs
 hrefs:
   first: page-top
-  second: learn-more
-  third: how-it-works  
-  last: contact-us
+  second: how-it-works 
+  third: learn-more
+  last: join-us
+
+contact-header: contact-us
 
 #carousel background images
 background:
@@ -37,6 +40,11 @@ background:
   second: img/portfolio/bg2.jpg
   third: img/portfolio/bg3.jpg
   fourth: img/portfolio/bg.jpg
+
+about:
+  first: img/finger.png
+  second: img/coin.png
+  third: img/chat.png
 
 # Footer settings
 footer:

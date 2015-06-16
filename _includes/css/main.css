@@ -287,6 +287,11 @@ header a {
     border: 0;
 }
 
+.img-container {
+    max-width: 100%;
+    line-height: 117;
+}
+
 section {
     padding: 100px 0;
 }
@@ -296,10 +301,11 @@ section h2 {
     font-size: 3em;
 }
 
-section.success {
-    color: #fff;
+section {
+    color: black;
     background: #{{ site.color.primary }};
 }
+
 
 @media(max-width:767px) {
     section {
@@ -386,11 +392,10 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #{{ site.color.primary }};
-    background: #fff;
+    color: #{{ site.color.secondary }};
 }
 
-section#{{site.hrefs.last}}{
+section#{{site.contact-header}}{
     background-repeat:no-repeat;
     background-image: url('/{{site.background.fourth}}');
     background-size: cover;
