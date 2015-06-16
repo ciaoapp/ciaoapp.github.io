@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ciaoapp/ciaoapp.github.io#readme",
   "devDependencies": {
+    "browser-sync": "^2.7.3",
     "browserify": "^10.2.1",
     "browserify-shim": "^3.8.6",
     "gulp": "^3.8.11",
@@ -27,7 +28,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.4.1",
     "gulp-uglify": "^1.2.0",
-    "gulp-uncss": "^1.0.1"
+    "gulp-uncss": "^1.0.1",
+    "require-dir": "^0.3.0"
   },
   "browserify-shim": {
     "jquery": "$"

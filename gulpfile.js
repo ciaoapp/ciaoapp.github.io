@@ -18,12 +18,17 @@ var shell = require('gulp-shell');
 //Test Dependencies 
 
 
+var requireDir = require('require-dir');
+
+// Require all tasks in gulp/tasks, including subfolders
+requireDir('./gulp/tasks', { recurse: true });
+
 var options = {
   uncss: {
     html: ["./_site/index.html", "./_site/privacy.html"],
   },
   minifyCSS: { 
-  	keepBreaks: false
+  	keepBreaks: true
   }
 };
 
@@ -67,6 +72,10 @@ gulp.task('scripts', function() {
     .pipe(uglify())
     .pipe(gulp.dest('dist'));
 });
+
+gulp.task('serve',shell.task([
+		"bundle exec jekyll serve --no-watch"
+	]));
 
 gulp.task("dev", ["uncss-minify","scripts","serve"]);
 

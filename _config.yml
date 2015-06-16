@@ -21,6 +21,7 @@ work-section-title: How It Works
 contact-section-title: Join The Waitlist
 
 privacy-url: /privacy/
+conditions-url: /terms-and-conditions/
 
 #hrefs
 hrefs:
@@ -74,3 +75,11 @@ defaults:
     values:
       layout: "default"
       type: "pages"
+  - scope:
+      path: "terms-and-conditions"
+    values:
+      layout: "privacy-layout"
+      type: "pages"
+
+exclude: ['node_modules','gulp','package.json','gulpfile.js']
+

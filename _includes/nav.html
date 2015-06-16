@@ -20,7 +20,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="link-navbar">
                 <ul class="nav navbar-nav">
-                    {% if page.url == site.privacy-url %}
+                    {% if page.url == site.privacy-url or page.url == site.conditions-url %}
                         {% include privacy-navlinks.html %}
                     {% else %}
                         {% include main-navlinks.html %}
