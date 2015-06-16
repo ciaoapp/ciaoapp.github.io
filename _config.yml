@@ -18,6 +18,7 @@ color:
 #scrollable sections 
 learn-section-title: Learn More
 work-section-title: How It Works
+phone-section-title: Features
 join-section-title: Join Us
 contact-section-title: Contact Us
 
@@ -30,6 +31,7 @@ hrefs:
   first: page-top
   second: how-it-works 
   third: learn-more
+  fourth: features
   last: join-us
 
 contact-header: contact-us
@@ -40,6 +42,7 @@ background:
   second: img/portfolio/bg2.jpg
   third: img/portfolio/bg3.jpg
   fourth: img/portfolio/bg.jpg
+  phone: img/iphone.png
 
 about:
   first: img/finger.png

@@ -303,7 +303,19 @@ section h2 {
 
 section {
     color: black;
-    background: #{{ site.color.primary }};
+    background-color: #{{ site.color.primary }};
+}
+
+section#{{site.hrefs.fourth}}{
+    vertical-align: middle;    
+}
+
+#phone-container{
+    margin-right: 20vw;
+    margin-left: 20vw;
+    max-width: 100%;
+    height: 700px;
+    background: url('/{{site.background.phone}}') no-repeat;
 }
 
 
