@@ -1,8 +1,8 @@
 # Site settings
-title: Ciao
-email: victor@ciaoapp.us
+title: Poptalk
+email: care@poptalk.us
 url: joinciao.com
-description: "Join Ciao Now! Sign up for our waiting list!"
+description: "Join Poptalk Now! Download our app from the Google Play Store!"
 favicon: img/favicon.ico
 # Contact form: comment the line below if you want to stick with the default PHP contact form
 contact: static
@@ -10,7 +10,7 @@ contact: static
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: 5F87D7 #80B3FF
-  secondary:  D60207 #FD6E8A
+  secondary:  0084ff #D60207 #FD6E8A
   secondary-dark: 534344 #A2122F
   link-color: BDAFAF
   alternate: fff
@@ -18,17 +18,18 @@ color:
 #scrollable sections 
 learn-section-title: Learn More
 work-section-title: How It Works
-contact-section-title: Join The Waitlist
+contact-section-title: Contact Us
 
 privacy-url: /privacy/
 conditions-url: /terms-and-conditions/
+advertisers-url: /contact-us/advertisers/
 
 #hrefs
 hrefs:
   first: page-top
   second: learn-more
   third: how-it-works  
-  last: join-waitlist
+  last: contact-us
 
 #carousel background images
 background:
@@ -39,22 +40,16 @@ background:
 
 # Footer settings
 footer:
-  copyright: Ciao Inc. 
+  copyright: Poptalk Inc. 
   location: Location
   social: Around the Web
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: https://twitter.com/ciaotelecom
+    url: https://twitter.com/poptalk
   - title: facebook
-    url: https://www.facebook.com/ciaotelecomglobal
-  - title: linkedin
-    url: https://www.linkedin.com/company/ciao-telecom-inc-
-  - title: google-plus
-    url: https://plus.google.com/+ciao/
-  - title: github
-    url: http://github.com/simonc312
+    url: https://www.facebook.com/poptalk
 
 # Postal address (add as many lines as necessary)
 address:
@@ -78,7 +73,7 @@ defaults:
   - scope:
       path: "terms-and-conditions"
     values:
-      layout: "privacy-layout"
+      layout: "page-layout"
       type: "pages"
 
 exclude: ['node_modules','gulp','package.json','gulpfile.js']
