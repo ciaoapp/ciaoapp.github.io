@@ -25,7 +25,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 hr.star-light,
@@ -311,11 +311,44 @@ section#{{site.hrefs.fourth}}{
 }
 
 #phone-container{
-    margin-right: 20vw;
-    margin-left: 20vw;
     max-width: 100%;
     height: 700px;
     background: url('/{{site.background.phone}}') no-repeat;
+}
+
+.feature {
+    margin: 40% 10%;
+}
+
+.pull-left .feature h3{
+    text-align:right;
+}
+
+.pull-left .feature h3::after{
+    content: "\f055";
+    display: inline-block;
+    position: absolute;
+    right: -0px;
+    font-family: FontAwesome;
+    font-size: 1em;
+
+}
+
+.pull-right .feature h3::before{
+    content: "\f055";
+    display: inline-block;
+    position: absolute;
+    left: -0px;
+    font-family: FontAwesome;
+    font-size: 1em;
+
+}
+.pull-left{
+    text-align: right !important;
+}
+
+.pull-right{
+    text-align: left !important;
 }
 
 
