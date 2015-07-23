@@ -334,6 +334,10 @@ section#{{site.hrefs.fourth}}{
 
 }
 
+.pull-left .feature h3::hover, .pull-right .feature h3::hover{
+    color: blue;
+} 
+
 .pull-right .feature h3::before{
     content: "\f055";
     display: inline-block;
