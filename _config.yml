@@ -45,9 +45,9 @@ background:
   phone: img/iphone.png
 
 about:
-  first: img/finger.png
+  first: img/coin.png
   second: img/coin.png
-  third: img/chat.png
+  third: img/coin.png
 
 # Footer settings
 footer:
