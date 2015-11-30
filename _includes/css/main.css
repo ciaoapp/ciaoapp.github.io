@@ -25,7 +25,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 hr.star-light,
@@ -72,7 +72,7 @@ hr.star-primary:after {
 }
 
 #carousel{
-  margin-top:100px;
+  margin-top:80px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -83,14 +83,14 @@ hr.star-primary:after {
     margin: 0px auto;
 }
 
-header .privacy-content{
+header .page-content{
     color: #000;
     float: none;
     text-align:left;
 }
 
 header .foreground-content{
-    top:60px;
+    top:40px;
 }
 .foreground-content{
     z-index:2;
@@ -124,7 +124,7 @@ header {
 }
 
 header .container {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 50px;
 }
 
@@ -240,7 +240,7 @@ header a {
     }
     .navbar-fixed-top {
 
-        padding: 20px 0;
+        padding: 10px 0;
         box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
@@ -255,7 +255,7 @@ header a {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -287,6 +287,11 @@ header a {
     border: 0;
 }
 
+.img-container {
+    max-width: 100%;
+    line-height: 117;
+}
+
 section {
     padding: 100px 0;
 }
@@ -296,10 +301,60 @@ section h2 {
     font-size: 3em;
 }
 
-section.success {
-    color: #fff;
-    background: #{{ site.color.primary }};
+section {
+    color: black;
+    background-color: #{{ site.color.primary }};
 }
+
+section#{{site.hrefs.fourth}}{
+    vertical-align: middle;    
+}
+
+#phone-container{
+    max-width: 100%;
+    height: 700px;
+    background: url('/{{site.background.phone}}') no-repeat;
+}
+
+.feature {
+    margin: 40% 10%;
+}
+
+.pull-left .feature h3{
+    text-align:right;
+}
+
+.pull-left .feature h3::after{
+    content: "\f055";
+    display: inline-block;
+    position: absolute;
+    right: -0px;
+    font-family: FontAwesome;
+    font-size: 1em;
+
+}
+
+.pull-left .feature h3::hover, .pull-right .feature h3::hover{
+    color: blue;
+} 
+
+.pull-right .feature h3::before{
+    content: "\f055";
+    display: inline-block;
+    position: absolute;
+    left: -0px;
+    font-family: FontAwesome;
+    font-size: 1em;
+
+}
+.pull-left{
+    text-align: right !important;
+}
+
+.pull-right{
+    text-align: left !important;
+}
+
 
 @media(max-width:767px) {
     section {
@@ -386,15 +441,18 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #{{ site.color.primary }};
-    background: #fff;
+    color: #{{ site.color.secondary }};
 }
 
-section#join-waitlist{
+section#{{site.contact-header}}{
     background-repeat:no-repeat;
     background-image: url('/{{site.background.fourth}}');
     background-size: cover;
     overflow:hidden;
+}
+
+#contactContainer {
+    margin-top: 30px;
 }
 
 #contactContainer .header {

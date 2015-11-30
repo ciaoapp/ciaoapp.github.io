@@ -4,6 +4,15 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+// jQuery for onHover Phone styling
+$(function(){
+    $(".feature h3:focus");
+
+}); 
+
+
+
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     var sections = $('.navbar-nav li a');

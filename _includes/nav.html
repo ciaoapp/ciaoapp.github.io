@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                 </button>
                  <a class="logo" href="#page-top">
-                        <img src="/img/favicons/apple-touch-icon-72x72.png" class="img-centered" alt="">
+                        <img src="/img/favicons/apple-icon-72x72.png" class="img-centered" alt="">
                         <div class="logo-shadow">
                         </div>
                     </a>
@@ -20,8 +20,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="link-navbar">
                 <ul class="nav navbar-nav">
-                    {% if page.url == site.privacy-url or page.url == site.conditions-url %}
-                        {% include privacy-navlinks.html %}
+                    {% if page.navlinks %}
+                        {% include page-navlinks.html %}
                     {% else %}
                         {% include main-navlinks.html %}
                     {% endif %}
